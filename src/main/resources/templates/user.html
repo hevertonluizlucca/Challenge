@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Listagem de Usuários</title>
+
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="js/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="css/AdminLTE.min.css">
+<link rel="stylesheet" href="css/skins/skin-blue.min.css">
+<script src="js/jquery/jquery.slim.js"></script>
+<script src="js/bootstrap/js/bootstrap.js"></script>
+<script src="js/adminlte.min.js"></script>
+</head>
+
+<body class="hold-transition skin-blue layout-top-nav">
+	<div class="wrapper">
+
+		<header class="main-header">
+			<body class="skin-blue layout-top-nav">
+				<header class="main-header">
+					<nav class="navbar navbar-static-top">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<a href="#" class="navbar-brand"><b>Challenge</b></a>
+								<button type="button" class="navbar-toggle collapsed"
+									data-toggle="collapse" data-target="#navbar-collapse">
+									<i class="fa fa-bars"></i>
+								</button>
+							</div>
+						</div>
+					</nav>
+				</header>
+			</body>
+		</header>
+
+		<div class="content-wrapper" style="min-height: 307px;">
+			<div class="container">
+				<section class="content-header">
+					<h1>Lista de usuários</h1>
+				</section>
+				<section class="content">
+					<div class="box">
+						<div class="box-header">
+							<!--<h3 class="box-title"></h3>-->
+							<div class="box-title">
+								<form action="user" method="post">
+									<div class="input-group input-group-sm" style="width: 250px;">
+										<input class="form-control" type="text" name="filter"id="filter" placeholder="Pesquisar">
+										<div class="input-group-btn">
+											<button type="submit" class="btn btn-default"><i class="fa fa-search"></i>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body table-responsive">
+							<table class="table table-hover">
+								<tbody>
+									<tr>
+										<th>Id</th>
+										<th>Username</th>
+										<th>Nome</th>
+										<th>Sobrenome</th>
+										<th>E-mail</th>
+										<th>Phone</th>
+										<th>Data Registro</th>
+										<th>Ativo</th>
+									</tr>
+									<tr th:each="user : ${usersList}">
+										<td th:text="${user.id}"></td>
+										<td th:text="${user.username}"></td>
+										<td th:text="${user.name}"></td>
+										<td th:text="${user.surname}"></td>
+										<td th:text="${user.email}"></td>
+										<td th:text="${user.phone}"></td>
+										<td th:text="${user.register_date}"></td>
+										<td th:text="${user.is_enable==true?'Sim':'Não'}"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- /.box-body -->
+					</div>
+				</section>
+			</div>
+		</div>
+</body>
+</html>

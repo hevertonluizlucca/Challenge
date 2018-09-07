@@ -2,7 +2,7 @@
 * Faça o download do repositório.
 * Importe como projeto maven na ide de sua preferência.
 * Dependências estão decritas no `pom.xml`
-* É importante rodar o mvn install para o download das dependências
+* É importante executar o mvn install para o download das dependências
 * Build/Clean Build
 * A aplicação pode ser executada a partir da classe `br.com.hevertonluizlucca.challenge.ChallengeAplication`
 * A aplicação pode ser executada através do container WildFly 13

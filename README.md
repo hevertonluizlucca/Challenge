@@ -13,7 +13,7 @@ A aplicação foi desenvolvida utilizando o Spring Framework 5, Spring Boot 2, T
 
 Auto-Avaliação sobre o desenvolvimento da aplicação.
 
-* Pontos fortes: Como destacado anteriormente o uso de tecnologias atuais obedecendo padrões que podem ser utilizados para grandes projetos foi implementado, foi de grande aprendizado o uso destas tecnologias pois não são tecnologias e ferramentas que uso no meu dia a dia, foi de grande aprendizado.
+* Pontos fortes: Como destacado anteriormente o uso de tecnologias atuais obedecendo padrões que podem ser utilizados para grandes projetos foi implementado, foi de grande aprendizado o uso destas tecnologias pois não são tecnologias e ferramentas que uso no meu dia a dia, foi muito gratificante implementar esse pequeno desafio.
 
 * Pontos fracos: Melhoria geral da aplicação, incluir crud de inserção, tela de login, implementar testes das novas funcionalidades. Acredito que algum ponto de padrão de projeto possa ter passado despercebido pela minha não ambientação com esse tipo de desenvolvimento. 
 

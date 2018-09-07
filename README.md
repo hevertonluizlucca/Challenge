@@ -4,7 +4,7 @@
 * Dependências estão descritas no `pom.xml`
 * É importante executar o mvn install para o download das dependências
 * Build/Clean Build
-* A aplicação pode ser executada a partir da classe `br.com.hevertonluizlucca.challenge.ChallengeAplication`
+* A aplicação pode ser executada a partir da classe `br.com.hevertonluizlucca.challenge.ChallengeApplication`
 * A aplicação pode ser executada através do container WildFly 13 ou superior.
 * A aplicação esta configurada para utilizar banco de dados mysql, basta somente ajustar o driver do mysql na classe application.properties e se o schema db_challenge não existir ele será criado e automaticamente persistido os dados quando a projeto for executado.
 
